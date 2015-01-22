@@ -126,7 +126,7 @@ module.exports = React.createClass({
         var style = {
             width: window.innerHeight,
             height: window.innerHeight,
-            left: window.innerHeight * this.props.index
+            left: ( window.innerHeight * this.props.index ) + 200
         };
 
 

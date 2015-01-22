@@ -5,6 +5,7 @@ var router = require( 'director' ).Router();
 
 var itemStore = require( './stores/itemStore' );
 var Week = require( './components/week.jsx' );
+var Nav = require( './components/nav.jsx' );
 
 var App = React.createClass({
 
@@ -55,6 +56,7 @@ var App = React.createClass({
 
         return (
             <div>
+                <Nav />
                 { weeks }
             </div>
         );

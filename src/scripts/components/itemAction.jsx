@@ -19,8 +19,10 @@ module.exports = React.createClass({
 
         return (
             <div className={ classes } style={ style }>
-                <h2>Action</h2>
-                <p>{ this.props.item.title }</p>
+                <div className='content'>
+                    <h2>{ this.props.item.title }</h2>
+                    <p>{ this.props.item.summary }</p>
+                </div>
                 <img className='fit' src={ this.props.item.image } />
             </div>
         );

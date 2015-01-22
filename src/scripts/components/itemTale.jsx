@@ -20,9 +20,11 @@ module.exports = React.createClass({
 
         return (
             <div className={ classes } style={ style }>
-                <h2>Tale</h2>
-                <p>{ this.props.item.author }</p>
                 <img className='fit' src={ this.props.item.image } />
+                <div className='content'>
+                    <h2>{ this.props.item.author }</h2>
+                    <p>{ this.props.item.role }</p>
+                </div>
             </div>
         );
 
