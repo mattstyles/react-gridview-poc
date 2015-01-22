@@ -52,7 +52,7 @@ class ItemStore extends EventEmitter {
                         category: 'tale',
                         author: 'Elmric Johnson',
                         role: 'Glassblower',
-                        image: 'http://fillmurray.com/430/230'
+                        image: 'http://fillmurray.com/430/215'
                     },
                     {
                         category: 'action',
@@ -98,7 +98,7 @@ class ItemStore extends EventEmitter {
                         category: 'tale',
                         author: 'Wayne Arthur Welchuck',
                         role: 'Silversmith',
-                        image: 'http://fillmurray.com/400/200'
+                        image: 'http://fillmurray.com/350/175'
                     },
                     {
                         category: 'action',

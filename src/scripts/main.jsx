@@ -20,7 +20,8 @@ var App = React.createClass({
 
     componentDidMount: function() {
         router.on( '/', this.home );
-        router.on( '/:category', this.filter );
+        router.on( '/:category', this.home );
+        // router.on( '/:category', this.filter );
 
         router.init( '/' );
     },
@@ -46,9 +47,9 @@ var App = React.createClass({
         console.log( this.state.title );
         console.log( this.props );
 
-        var weeks = this.props.items.map( function( week ) {
+        var weeks = this.props.items.map( function( week, index ) {
             return (
-                <Week items={ week } />
+                <Week items={ week } index={ index } />
             );
         });
 
