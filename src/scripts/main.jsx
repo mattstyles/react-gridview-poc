@@ -42,13 +42,20 @@ var App = React.createClass({
         itemStore.filter( filter );
     },
 
+    say: function( something ) {
+        console.log( this.state.title, 'says', something );
+    },
+
 
     render: function() {
 
         console.log( this.state.title );
         console.log( this.props );
 
-        var weeks = this.props.items.map( function( week, index ) {
+
+
+        var weeks = this.props.items.map( ( week, index ) => {
+            this.say( 'week' );
             return (
                 <Week items={ week } index={ index } />
             );
