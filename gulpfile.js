@@ -23,6 +23,10 @@ var browserify  = require( 'browserify' );
 var reactify    = require( 'reactify' );
 var envify      = require( 'envify' );
 var watchify    = require( 'watchify' );
+var to5ify = require( '6to5ify' );
+var uglifyify = require( 'uglifyify' );
+
+var to5 = require( 'gulp-6to5' );
 
 
 /**
@@ -122,11 +126,9 @@ gulp.task( 'scripts', function() {
         var compiler = watcher || bundler;
 
         return compiler
-            .transform( envify )
-            .transform( reactify, {
-                es6: true,
-                target: 'es5'
-            })
+            // .transform( envify )
+            // .transform( reactify )
+            .transform( to5ify )
             .bundle()
             .on( 'error', $.util.log.bind( $.util, 'Browserify error' ) )
             .pipe( source( 'main.js' ) )
