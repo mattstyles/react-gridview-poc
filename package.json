@@ -17,7 +17,7 @@
     "lodash.random": "^2.4.1",
     "object-assign": "^2.0.0",
     "react": "^0.12.2",
-    "superagent": "^0.21.0"
+    "superagent": "^5.1.0"
   },
   "devDependencies": {
     "6to5ify": "^3.1.2",
