@@ -16,7 +16,7 @@
     "lodash.bindall": "^2.4.1",
     "lodash.random": "^2.4.1",
     "object-assign": "^2.0.0",
-    "react": "^0.12.2",
+    "react": "^16.13.1",
     "superagent": "^0.21.0"
   },
   "devDependencies": {
